@@ -72,3 +72,5 @@ end
 
 #Pagination gems
 gem 'kaminari'
+
+gem 'simple_form'
