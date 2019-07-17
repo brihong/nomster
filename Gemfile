@@ -77,3 +77,6 @@ gem 'simple_form'
 
 #Font Awesome Icons
 gem "font-awesome-rails"
+
+#Devise User Authentication
+gem 'devise'
