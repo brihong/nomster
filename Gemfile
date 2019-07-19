@@ -80,3 +80,8 @@ gem "font-awesome-rails"
 
 #Devise User Authentication
 gem 'devise'
+
+gem "geocoder"
+
+# add values to the ENV on our localhost
+gem "figaro"
