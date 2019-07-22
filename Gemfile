@@ -85,3 +85,8 @@ gem "geocoder"
 
 # add values to the ENV on our localhost
 gem "figaro"
+
+#CarrierWave provides a simple and extremely flexible way to upload files from Ruby Apps
+gem 'carrierwave', '~> 1.0'
+
+gem 'fog-aws'
