@@ -6,6 +6,7 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
 
+<!-- Add email of user on Index page if place has a user -->
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
@@ -22,12 +23,12 @@
         </div>
          <% end %>
         <div class="col-12 col-sm-6">
-    <% if place.photos.present? %>
-          <blockquote>
+        <blockquote>
+          <% if place.photos.present? %>          
             <b><%= image_tag place.photos.last.picture.to_s %></b> -
             <%= place.photos.last.caption %>
             <% end %>
-            </blockquote>
+        </blockquote>
         </div>
     </div>
     </div>
