@@ -32,8 +32,6 @@ body {
 .navbar-inverse .navbar-brand {
   color: #006BB6;
   font-family: 'spin_cycle_otregular', sans-serif;
-  margin-bottom: 0;
-
 }
 
 .invalid-feedback {
@@ -88,16 +86,11 @@ blockquote p {
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   display: block;
   max-height: 550px;
-  width: 85%;
+  width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.carousel-item.active, 
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
-}
 
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -105,8 +98,8 @@ blockquote p {
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);
+  width: 77%;
   position: absolute;
-  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
