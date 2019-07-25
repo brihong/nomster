@@ -32,6 +32,7 @@ body {
 .navbar-inverse .navbar-brand {
   color: #006BB6;
   font-family: 'spin_cycle_otregular', sans-serif;
+  margin-bottom: 0;
 }
 
 .invalid-feedback {
@@ -44,6 +45,7 @@ body {
 #map {
   height: 300px;
 }
+
 html, body {
   height: 100%;
   margin: 0;
@@ -84,13 +86,17 @@ blockquote p {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  display: block;
   max-height: 550px;
-  width: 88%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: block;
+}
 
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -98,7 +104,7 @@ blockquote p {
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 77%;
+  width: 50%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -106,4 +112,24 @@ blockquote p {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    margin-left: 65px;
+    position: absolute;
+}
+
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    margin-left: -65px;
+    position: absolute;
 }
