@@ -145,3 +145,19 @@ blockquote p {
     margin-left: -65px;
     position: absolute;
 }
+
+.text-center {
+  text-align: center;
+  display: in-block;
+}
+
+.blockquote-box {
+  background: #E5E5E5;
+  border-left: 10px solid #006BB6;
+  border-right: 10px solid #006BB6;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

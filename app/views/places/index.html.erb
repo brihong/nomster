@@ -39,15 +39,21 @@
 
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
-    <i><%= place.address %></i><br /><br />
-    <p><%= place.description %></p><br />
+    <h1 class="text-center"><%= link_to place.name, place_path(place) %></h1><br />
+    <p class="text-center"><%= place.address %></p>
+    <p class="blockquote-box"><%= place.description %></p>        
 
-<!-- Add email of user on Index page if place has a user -->
-    <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
+<!-- Add latest photo if present -->
+    <div class="col-10 offset-1">    
+      <% if place.photos.present? %>
+      <blockquote>          
+        <b><%= image_tag place.photos.last.picture.to_s, class: 'show-image-size' %></b> -
+          <%= place.photos.last.caption %>
+        <% end %>
+    </blockquote>
+        </div>
 
+<!-- Add latest comment if present -->
     <% if place.comments.present? %>
         <div class="col-12">
           <blockquote>
@@ -59,15 +65,12 @@
           </blockquote>
         </div>
          <% end %>
-        <div class="col-12 col-sm-6">
-    
-      <% if place.photos.present? %>
-      <blockquote>          
-        <b><%= image_tag place.photos.last.picture.to_s, class: 'show-image-size' %></b> -
-          <%= place.photos.last.caption %>
-        <% end %>
-    </blockquote>
-        </div>
+
+<!-- Add email of user on Index page if place has a user -->
+    <% if place.user.present? %>
+     <small>Added by: </small><small><%= place.user.email %></small>
+    <% end %>
+
     </div>
     </div>
 <% end %>
